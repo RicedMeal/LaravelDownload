@@ -54,7 +54,6 @@
                         </div>
                     </div>
 
-
                     <!--hala ano to category side nav -->
                     <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-800 hover:text-gray-200" href="#">
                         <svg class="shrink-0 w-5 h-5 mr-2 text-gray-400 transition group-hover:text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -84,22 +83,26 @@
                         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                     </svg>
                 </button>
-                <div class="hidden md:flex items-center ml-auto"> <!-- use ml-(no.) to adjust margin -->
+                <div class="hidden md:flex items-center"> <!-- use ml-(no.) to adjust margin -->
                     <!-- search bar -->
-                    <div class="hidden md:flex items-center border border-gray-400 square p-2 ml-10"> <!-- use ml-(no.) to adjust margin -->
+                    <div class="hidden md:flex items-center border border-gray-400 square p-2 pr-5  "> <!-- use ml-(no.) to adjust margin -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
-                        <input class="bg-transparent border-0 form-input outline-none max-w-100 placeholder-gray-400" placeholder="Search for articles..." />
+                        <input class="bg-transparent border-0 form-input outline-none placeholder-gray-400 max-w-200 w-96" placeholder="Search for articles..." />
                     </div>
+                </div>
 
-                    <!-- notification  -->
-                    <a href="#" class="flex text-gray-500 ml-8"> <!-- use ml-(no.) to adjust margin -->
+                <!-- notification  -->
+                <div class="hidden md:flex items-center ml-auto">
+                    <a href="#" class="flex text-gray-500"> <!-- use ml-(no.) to adjust margin -->
                         <svg class="shrink-0 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
                         </svg>
                     </a>
-                  <!-- user profile logo -->
+                </div>
+
+                <!-- user profile logo -->
                 <div x-data="{ isOpen: false }" class="relative inline-block">
                     <div class="flex items-center ml-5">
                         <div @click="isOpen = !isOpen" class="flex items-center bg-white border-0 py-2 px-2 focus:outline-none hover:bg-gray-200 rounded text-black text-base mt-4 md:mt-0 cursor-pointer">
@@ -117,7 +120,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
             </div>
             </header>
-            <div class="p-4">
+            <div class="p-4 ml-0 transition md:ml-60">
                 <!-- Add your main content here -->
                 <div class="-mt-2 border-4 border-dashed rounded h-96">
                     <!-- Your content goes hereeee -->
