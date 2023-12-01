@@ -105,15 +105,15 @@
                 <!-- user profile logo -->
                 <div x-data="{ isOpen: false }" class="relative inline-block">
                     <div class="flex items-center ml-5">
-                        <div @click="isOpen = !isOpen" class="flex items-center bg-white border-0 py-2 px-2 focus:outline-none hover:bg-gray-200 rounded text-black text-base mt-4 md:mt-0 cursor-pointer">
+                        <div @click="isOpen = !isOpen" class="flex items-center bg-white border-0 py-2 px-2 focus:outline-none hover:bg-gray-500 rounded text-black text-base mt-4 md:mt-0 cursor-pointer">
                             <img src="{{ asset('images/user.jpg') }}" alt="Photo of User Here" class="w-8 h-8 rounded-full object-cover">
                             <span class="ml-3 text-l">Hello, <b>Enzo!</b></span>
                 </div>
                     <!-- user profile content/functionality -->
                         <div x-show="isOpen" @click.away="isOpen = false" class="absolute top-12 right-0 mt-2 bg-white text-gray-800 border rounded shadow-md" style="display: none; z-index: 10;">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-200">Profile</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-200">Account Settings</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-200">Logout</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-500">Profile</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-500">Account Settings</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-500">Logout</a>
                         </div>
                     </div>
                 </div>
