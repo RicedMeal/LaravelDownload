@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\CreateProjectForm;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,8 +13,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+{{  }}
 
-Route::view('/', 'new');
+Route::view('/', 'layouts/app');
+
+//Route::view('Projects', 'livewire/Projects/app');
+
+Route::get('/create-project', function () {
+    return view('livewire.Create_Projects.app');
+})->name('create-project');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -24,3 +33,5 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__.'/auth.php';
+
+?>

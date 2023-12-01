@@ -9,11 +9,12 @@
 </head>
 <body>
     <!-- SIDE BAR AND TOP BAR -->
-    @include('layouts.nav')
+    @include('livewire.Create_Projects.nav')
             <!-- Page Content -->
-            <div class="p-4 ml-0 transition md:ml-60">
+            <div class="p-4 ml-0 transition md:ml-60 bg-gray-200">
                 <!-- Add your main content here -->
-                <div class="bg-gray-200 rounded-md p-4">
+                <div class="rounded-md">
+                    @include('livewire.Create_Projects.create-project')
                 </div>
             </div>
         </div>
@@ -21,6 +22,5 @@
         <div class="fixed inset-0 z-10 w-screen h-screen bg-black bg-opacity-25 md:hidden" x-show.transition="sideBar" x-cloak></div>
     </section>
     <script src="/js/app.js"></script>
-    @livewireScripts
 </body>
 </html>
