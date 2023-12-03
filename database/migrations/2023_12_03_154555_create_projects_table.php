@@ -10,12 +10,12 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('project_title', 75)->unique();
-            $table->string('department_office', 75);
-            $table->string('project_description', 75);
-            $table->string('person_in_charge', 75);
-            $table->string('document_inputs')->nullable()->unique();
+            $table->string('project_title');
+            $table->string('department_office');
+            $table->text('project_description');
+            $table->string('person_in_charge');
             $table->date('project_date');
+            $table->json('document_inputs')->nullable();
             $table->timestamps();
         });
     }
