@@ -10,7 +10,7 @@ class CreateCostEstimatesTable extends Migration
     {
         Schema::create('cost_estimates', function (Blueprint $table) {
             $table->id();
-            $table->string('project', 75);
+            $table->string('project', 75)->unique();
             $table->string('location', 75);
             $table->string('description', 75);
             $table->bigInteger('quantity');

@@ -14,7 +14,6 @@ class CreateProjectsTable extends Migration
             $table->string('department_office', 75);
             $table->string('project_description', 75);
             $table->string('person_in_charge', 75);
-            $table->string('document_inputs')->nullable()->unique();
             $table->date('project_date');
             $table->timestamps();
         });

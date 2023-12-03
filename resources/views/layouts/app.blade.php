@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Project Cost Accounting</title>
     <!-- Styles -->
+    @livewireStyles
 </head>
 <body>
     <!-- SIDE BAR AND TOP BAR -->

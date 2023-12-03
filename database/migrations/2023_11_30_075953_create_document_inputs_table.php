@@ -10,7 +10,7 @@ class CreateDocumentInputsTable extends Migration
     {
         Schema::create('document_inputs', function (Blueprint $table) {
             $table->id();
-            $table->string('project_title', 75)->unique();
+            $table->string('project_title_di', 75)->unique();
             $table->string('document_title', 75);
             $table->string('purchase_request_form')->nullable()->unique();
             $table->string('rfq_form')->nullable()->unique();

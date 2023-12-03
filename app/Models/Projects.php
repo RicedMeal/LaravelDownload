@@ -11,6 +11,6 @@ class Projects extends Model
         'department_office',
         'project_description',
         'person_in_charge',
-        'document_inputs', 
+        'project_date', 
     ];
 }

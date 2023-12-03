@@ -32,7 +32,7 @@
             </div>
             <div class="flex justify-end">
                 <!-- Add a Next button to proceed to another page -->
-                <button wire:click="goToNextPage" class="ml-4 mt-20  bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green">Next</button>
+                <button wire:click="nextButton" class="ml-4 mt-20  bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green">Next</button>
             </div>
         </form>
     </div>

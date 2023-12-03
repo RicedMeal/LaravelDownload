@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class DocumentInputs extends Model
 {
     protected $fillable = [
+        'project_title_di',
         'document_title',
         'purchase_request_form',
         'rfq_form',
